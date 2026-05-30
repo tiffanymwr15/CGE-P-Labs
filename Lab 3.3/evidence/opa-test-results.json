@@ -1,0 +1,62 @@
+{
+  "result": [
+    {
+      "package": "data.compliance.ac3_test",
+      "location": "policies/tests/ac3_no_public_test.rego",
+      "tests": [
+        {
+          "name": "test_compliant_bucket_passes",
+          "duration": 513100,
+          "result": "pass"
+        },
+        {
+          "name": "test_public_bucket_fails",
+          "duration": 0,
+          "result": "pass"
+        },
+        {
+          "name": "test_open_management_port_fails",
+          "duration": 0,
+          "result": "pass"
+        }
+      ]
+    },
+    {
+      "package": "data.compliance.cm6_test",
+      "location": "policies/tests/cm6_required_tags_test.rego",
+      "tests": [
+        {
+          "name": "test_complete_passes",
+          "duration": 513100,
+          "result": "pass"
+        },
+        {
+          "name": "test_partial_fails",
+          "duration": 0,
+          "result": "pass"
+        },
+        {
+          "name": "test_no_labels_fail",
+          "duration": 0,
+          "result": "pass"
+        }
+      ]
+    },
+    {
+      "package": "data.compliance.sc28_test",
+      "location": "policies/tests/sc28_encryption_test.rego",
+      "tests": [
+        {
+          "name": "test_compliant_passes",
+          "duration": 1864500,
+          "result": "pass"
+        },
+        {
+          "name": "test_noncompliant_fails",
+          "duration": 2377600,
+          "result": "pass"
+        }
+      ]
+    }
+  ]
+}
